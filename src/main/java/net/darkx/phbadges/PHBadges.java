@@ -11,6 +11,6 @@ public class PHBadges implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		System.out.println("A test line so i can commit, because i might have the wrong github linked");
 	}
 }
