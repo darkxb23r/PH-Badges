@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ph-badges",
+	"version": "${version}",
+	"name": "PH Badges",
+	"description": "Badge mod for PlanetHelios, for use on CLient and Server",
+	"authors": [
+		"darkx"
+	],
+	"contact": {
+		"homepage": "https://x.com/dhark_X",
+		"discord:": "darkxb23r",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ph-badges/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.darkx.phbadges.PHBadges"
+		],
+		"fabric-datagen": [
+			"net.darkx.phbadges.PHBadgesDataGenerator"
+		],
+		"client": [
+			"net.darkx.phbadges.PHBadgesClient"
+		]
+	},
+	"mixins": [
+		"ph-badges.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
