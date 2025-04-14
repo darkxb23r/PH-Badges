@@ -1,5 +1,6 @@
 package net.darkx.phbadges;
 
+import net.darkx.phbadges.item.Badges;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,5 @@ public class PHBadges implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		System.out.println("Secondary test");
-	}
+		Badges.registerBadges();}
 }
